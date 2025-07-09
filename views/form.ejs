@@ -2,15 +2,16 @@
 <html>
 <head>
   <title><%= title %></title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <h1><%= title %></h1>
   <form method="POST" action="/new">
     <label for="messageUser">Name:</label>
-    <input type="text" id="messageUser" name="messageUser" required><br><br>
+    <input type="text" id="messageUser" name="messageUser" required>
 
     <label for="messageText">Message:</label>
-    <textarea id="messageText" name="messageText" required></textarea><br><br>
+    <textarea id="messageText" name="messageText" required></textarea>
 
     <button type="submit">Submit</button>
   </form>
