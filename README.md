@@ -24,11 +24,22 @@ cd member-isaiah-mini-message-board
 ```bash
 npm install
 ```
-Run the Server
+3. Run the Server
 ```bash
 node app.js
 ```
 The server will start on http://localhost:3000
+
+💡 Usage
+- Visit / to see all messages.
+
+- Click "Post a New Message" to go to the form.
+
+- Fill out your name and message, then submit.
+
+- Click "View Details" next to any message to view it individually.
+
+
 
 🧩 Technologies Used
 
