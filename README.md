@@ -13,11 +13,6 @@ A simple message board web application built using **Node.js**, **Express**, and
 
 ---
 
-## 📁 Project Structure
-
-
----
-
 ## 🛠️ Installation & Setup
 
 ### 1. Clone the Repository
