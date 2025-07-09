@@ -5,10 +5,14 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1>Message Details</h1>
-  <p><strong>User:</strong> <%= message.user %></p>
-  <p><strong>Posted:</strong> <%= message.added.toLocaleString() %></p>
-  <p><strong>Text:</strong> <%= message.text %></p>
-  <a href="/">Back to Home</a>
+  <header>
+    <h1>Message Details</h1>
+  </header>
+  <div class="container message-detail">
+    <p><strong>User:</strong> <%= message.user %></p>
+    <p><strong>Posted:</strong> <%= message.added.toLocaleString() %></p>
+    <p><strong>Message:</strong><br><%= message.text %></p>
+    <a href="/">← Back to Home</a>
+  </div>
 </body>
 </html>

@@ -5,17 +5,21 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1><%= title %></h1>
-  <a href="/new">Post a new message</a>
-  <ul>
-    <% messages.forEach((message, index) => { %>
-      <li>
-        <strong><%= message.user %></strong> (<%= message.added.toLocaleString() %>): 
-        <%= message.text %> 
-        <br>
-        <a href="/message/<%= index %>">Open</a>
-      </li>
-    <% }) %>
-  </ul>
+  <header>
+    <h1><%= title %></h1>
+  </header>
+  <div class="container">
+    <a href="/new">Post a New Message</a>
+    <ul class="messages">
+      <% messages.forEach((message, index) => { %>
+        <li>
+          <strong><%= message.user %></strong> said:<br>
+          <%= message.text %><br>
+          <small><%= message.added.toLocaleString() %></small><br>
+          <a href="/message/<%= index %>">View Details</a>
+        </li>
+      <% }) %>
+    </ul>
+  </div>
 </body>
 </html>

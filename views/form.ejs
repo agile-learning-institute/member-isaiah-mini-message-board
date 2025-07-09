@@ -5,15 +5,20 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <h1><%= title %></h1>
-  <form method="POST" action="/new">
-    <label for="messageUser">Name:</label>
-    <input type="text" id="messageUser" name="messageUser" required>
+  <header>
+    <h1><%= title %></h1>
+  </header>
+  <div class="container">
+    <form method="POST" action="/new">
+      <label for="messageUser">Name:</label>
+      <input type="text" id="messageUser" name="messageUser" required>
 
-    <label for="messageText">Message:</label>
-    <textarea id="messageText" name="messageText" required></textarea>
+      <label for="messageText">Message:</label>
+      <textarea id="messageText" name="messageText" rows="4" required></textarea>
 
-    <button type="submit">Submit</button>
-  </form>
+      <button type="submit">Submit Message</button>
+    </form>
+    <a href="/">← Back to Home</a>
+  </div>
 </body>
 </html>
