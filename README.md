@@ -22,14 +22,15 @@ A simple message board web application built using **Node.js**, **Express**, and
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-username/message-board.git
-cd message-board
+git clone https://github.com/agile-learning-institute/member-isaiah-mini-message-board
+cd member-isaiah-mini-message-board
 npm install
 node app.js
-
+```
 The server will start on http://localhost:3000
 
 🧩 Technologies Used
+
 Node.js
 
 Express
