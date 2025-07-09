@@ -2,6 +2,7 @@
 <html>
 <head>
   <title><%= title %></title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <h1><%= title %></h1>
@@ -11,8 +12,8 @@
       <li>
         <strong><%= message.user %></strong> (<%= message.added.toLocaleString() %>): 
         <%= message.text %> 
-        <!-- Optional: Placeholder for details page -->
-        <button onclick="alert('Feature coming soon!')">Open</button>
+        <br>
+        <a href="/message/<%= index %>">Open</a>
       </li>
     <% }) %>
   </ul>
